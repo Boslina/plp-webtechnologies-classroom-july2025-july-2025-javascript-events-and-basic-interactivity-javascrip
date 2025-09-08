@@ -1,33 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Js Event Assignment</title> 
-    <head></head>
-    
-    <body>
-        <button id="mybutton">Click Me</button>
-        <p id="output">output...</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JavaScript Assignment</h1>
 
-        <input type="text" id="inputbox" placeholder="type something...">
-        <p id="hoverText">Hover over me...</p>
+  <!-- Question 1: Events -->
+  <section>
+    <h2>Question 1: Events</h2>
+    <button id="mybutton">Click Me</button>
+    <p id="output">output...</p>
+    <input type="text" id="inputbox" placeholder="type something...">
+    <p id="hoverText">Hover over me!</p>
+  </section>
 
-    <!-- counter Game-->
+  <!-- Question 2: Interactive Feature (Light/Dark Mode + Counter) -->
+  <section>
+    <h2>Question 2: Interactive Elements</h2>
+    <button id="toggleMode">Switch to Dark Mode</button>
 
-<button id="increase">Increase</button>
-<button id="decrease">Decrease</button>
-<p id="counter">0</p>
+    <div class="counter">
+      <button id="increase">Increase</button>
+      <button id="decrease">Decrease</button>
+      <p id="counter">0</p>
+    </div>
+  </section>
 
-<!-- form-->
-    <form onsubmit="return validateSignUp()">
-        <input type="text" id="username" placeholder="Enter your username"><br />
-        <input type="email" id="email" placeholder="Enter your email"><br />
-        <input type="password" id="password" placeholder="Enter your password"><br />
-        <button type="submit">Submit</button>
-        <p id="successMessage"></p>
+  <!-- Question 3: Form Validation -->
+  <section>
+    <h2>Question 3: Form Validation</h2>
+    <form id="signUpForm" onsubmit="return validateSignUp()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter username">
+      <br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Enter email">
+      <br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password">
+      <br>
+
+      <button type="submit">Sign Up</button>
     </form>
+  </section>
 
-    <script src="script.js"></script>
-    </body>
+  <script src="script.js"></script>
+</body>
 </html>
